@@ -23,6 +23,7 @@ export default function Home() {
             height={110}
             alt="samidev"
             className="rounded-full shrink-0 flex h-max"
+            priority={true}
           />
           <ImagesWithLinkList/>
         </div>

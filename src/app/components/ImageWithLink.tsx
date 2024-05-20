@@ -9,7 +9,7 @@ export type ImageWithLinkProps = {
 export function ImageWithLink({ href, src,alt }: ImageWithLinkProps) {
     return (
         <Link href={href}>
-                <Image src={src} alt={alt} width={30} height={30} className="hover-anim" />
+                <Image src={src} alt={alt} width={30} height={30} className="hover-anim" priority={true}  />
         </Link>
     );
     
