@@ -1,7 +1,7 @@
 import githubIcon from "@images/icons8-github-light.svg";
 import linkedinIcon from "@images/icons8-linkedin.svg";
 import blogIcon from "@images/icons8-b-50.png";
-import { ImageWithLinkProps, ImageWithLink } from "@components/ImageWithLink";
+import { ImageWithLinkProps, ImageWithLink } from "@/components/ImageWithLink";
 
 const imagesData: ImageWithLinkProps[] = [
   { href: "https://github.com/SamiFraca", src: githubIcon, alt: "github" },

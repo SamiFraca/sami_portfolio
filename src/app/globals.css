@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "Figtree";
-  src: url("assets/fonts/Figtree-VariableFont_wght.woff2") format("woff");
+  src: url("../assets/fonts/Figtree-VariableFont_wght.woff2") format("woff");
 }
 @font-face {
   font-family: "Red Hat";
-  src: url("assets/fonts/RedHatText-VariableFont_wght.woff2") format("woff");
+  src: url("../assets/fonts/RedHatText-VariableFont_wght.woff2") format("woff");
 }
 :root {
   --text-color: #fff;

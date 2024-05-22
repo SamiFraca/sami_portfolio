@@ -1,10 +1,10 @@
-import ImageWithLink from "@components/SidebarItem";
+import ImageWithLink from "@/components/SidebarItem";
 
 
 const sidebarItems = [
     { href: "/", text: "Home" },
     { href: "/about", text: "About" },
-    { href: "/Blog", text: "Blog" },
+    { href: "/blog", text: "Blog" },
     { href: "/contact", text: "Contact" },
 ];
 

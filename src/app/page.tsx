@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Myself from "@/app/assets/images/myself.webp";
-import ImagesWithLinkList from "@components/ImagesWithLinkList";
-import ProjectCardList from "./components/ProjectCardList";
+import Myself from "@/assets/images/myself.webp";
+import ImagesWithLinkList from "@/components/ImagesWithLinkList";
+import ProjectCardList from "../components/ProjectCardList";
 
 export default function Home() {
   return (
