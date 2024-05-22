@@ -1,4 +1,4 @@
-import ImageWithLink from "@/components/SidebarItem";
+import SideBarItem from "@/components/SidebarItem";
 
 
 const sidebarItems = [
@@ -14,7 +14,7 @@ export default function SidebarItemList() {
         <ul className="flex md:flex-col flex-row justify-center gap-4">
             {sidebarItems.map((item, index) => (
                 <li key={index}>
-                    <ImageWithLink href={item.href} text={item.text} />
+                    <SideBarItem {...item} />
                 </li>
             ))}
         </ul>

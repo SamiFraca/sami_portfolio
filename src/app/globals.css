@@ -45,6 +45,17 @@ p {
   @apply hover:bg-slate-500 transition-all hover:rounded hover:bg-opacity-40 hover:scale-110 p-1
 }
 
+.is-active,
+.hover-anim {
+  transition: background-color 0.3s ease-out;
+}
+
+.is-active:hover,
+.hover-anim:hover {
+  background-color: #f0f0f0; /* Specify the desired background color for the hover effect */
+  transition: background-color 0.3s ease-in;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
