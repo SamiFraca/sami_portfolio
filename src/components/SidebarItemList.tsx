@@ -5,7 +5,7 @@ const sidebarItems = [
     { href: "/", text: "Home" },
     { href: "/about", text: "About" },
     { href: "/blog", text: "Blog" },
-    { href: "/contact", text: "Contact" },
+    { href: "mailto:fracasami@gmail.com", text: "Contact" },
 ];
 
 
