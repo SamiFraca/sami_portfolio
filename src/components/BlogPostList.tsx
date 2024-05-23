@@ -1,4 +1,4 @@
-import { Posts } from "@/app/data/Posts";
+import { Posts } from "@/data/Posts";
 import { BlogPostItem } from "@/components/BlogPostItem";
 
 export const BlogPostItemList = () => {
