@@ -18,7 +18,6 @@ const NavItem = ({ href, text }: NavItemProps) => {
     setTimeout(() => {
       setIsTransition(false);
     }, 300); 
-    console.log("hola");
   };
   const pathname = usePathname();
   

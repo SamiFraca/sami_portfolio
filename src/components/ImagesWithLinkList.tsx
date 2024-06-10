@@ -5,7 +5,7 @@ import { ImageWithLinkProps, ImageWithLink } from "@/components/ImageWithLink";
 
 const imagesData: ImageWithLinkProps[] = [
   { href: "https://github.com/SamiFraca", src: githubIcon, alt: "github" },
-  { href: "https://samiblog.netlify.app/", src: linkedinIcon, alt: "linkedin" },
+  { href: "https://www.linkedin.com/in/sami-fraca-amghar-76b640194/", src: linkedinIcon, alt: "linkedin" },
   { href: "https://samiblog.netlify.app/", src: blogIcon.src, alt: "blog" },
 ];
 
