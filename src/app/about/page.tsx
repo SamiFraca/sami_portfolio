@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function AboutPage() {
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-4xl">About Me</h1>
-      <p>Hi everyone, I&apos;m Sami.</p>
+      <h2>Hi everyone, I&apos;m Sami.</h2>
       <p>
         Since I was young, I have always had a passion for computers and
         technology, which guided me towards a career that I find comfortable and
@@ -14,7 +16,7 @@ export default function AboutPage() {
       </p>
       <p>
         After that, i started working at Flat101 at 19 years old, (where i am
-        still).Now im 21 and i have been working on web development since then.
+        still). Now im 21 and i have been working on web development since then.
       </p>
       <p>
         I focus on ecommerce development, involving databases,backend and
@@ -24,14 +26,12 @@ export default function AboutPage() {
         In my free time, I enjoy exploring different technologies and approaches
         to enhance my professional growth and skills.
       </p>
-
       <p>
         I consider myself a technology enthusiast, I enjoy discovering new
         things and learning from them. Whenever I have an opportunity to explore new ideas, I&apos;m always up
         for the challenge
       </p>
-     
-     
+      <p>Right now im enhancing my Next.js, Vue and React skills. You can see some of my most recent projects in my <Link href="/" className="text-blue-300 hover:text-blue-500 transition-colors">Home page</Link></p>
     </div>
   );
 }
