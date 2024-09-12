@@ -20,7 +20,7 @@ export default function Home() {
             src={Myself}
             width={110}
             height={110}
-            alt="samidev"
+            alt="image of myself"
             className="rounded-full shrink-0 flex h-max"
             priority={true}
           />
