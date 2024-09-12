@@ -13,8 +13,7 @@ export default function Home() {
           my work.
         </p>
         <p>
-          I&apos;m currently working on my Next.js skills to enhance my tech
-          stack.
+          I&apos;m just a software developer who loves his job.
         </p>
         <div className="mt-8 flex gap-8 items-center">
           <Image
