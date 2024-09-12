@@ -2,6 +2,11 @@ import { ProjectCardProps } from "@/components/ProjectCard";
 
 export const Projects: ProjectCardProps[] = [
   {
+    href: "https://github.com/SamiFraca/DCP",
+    title: "DCP",
+    description: "Developer Collaboration Platform. Made with Next.js, Supabase, shadcn, Redux Toolkit and Jest",
+  },
+  {
     href: "https://github.com/SamiFraca/sami_portfolio",
     title: "Portfolio",
     description: "My own portfolio made with Next.js",
