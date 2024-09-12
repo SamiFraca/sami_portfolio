@@ -31,7 +31,8 @@ export default function AboutPage() {
         things and learning from them. Whenever I have an opportunity to explore new ideas, I&apos;m always up
         for the challenge
       </p>
-      <p>Right now im enhancing my Next.js, Vue and React skills. You can see some of my most recent projects in my <Link href="/" className="text-blue-300 hover:text-blue-500 transition-colors">Home page</Link></p>
+      <p>Right now im enhancing my Next.js, Vue and React skills. You can see some of my most recent projects in my <Link href="/" className="text-blue-300 hover:text-blue-500 transition-colors">Home page</Link> or <Link href="https://github.com/SamiFraca" className="text-blue-300 hover:text-blue-500 transition-colors">Github</Link>.</p>
+      <p>You can also check my <Link href='https://www.linkedin.com/in/sami-fraca-amghar-76b640194/' className="text-blue-300 hover:text-blue-500 transition-colors">Linkedin</Link> to get more information about me.</p>
     </div>
   );
 }
