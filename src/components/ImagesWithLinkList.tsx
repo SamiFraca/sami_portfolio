@@ -11,7 +11,7 @@ const imagesData: ImageWithLinkProps[] = [
 
 function imagesWithLinkList() {
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex sm:flex-col  gap-4  -order-1 sm:order-none">
       {imagesData.map((image, index) => (
         <li key={index}>
           <ImageWithLink href={image.href} src={image.src} alt={image.alt} />

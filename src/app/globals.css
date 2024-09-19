@@ -44,7 +44,18 @@ p {
 .hover-anim {
   @apply hover:bg-slate-500 transition-all hover:rounded hover:bg-opacity-40 hover:scale-110 p-1
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
+.scroller ul:hover {
+  animation-play-state: paused;
+}
 
 @layer utilities {
   .text-balance {
