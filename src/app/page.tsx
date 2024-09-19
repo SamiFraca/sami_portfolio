@@ -13,7 +13,7 @@ export default function Home() {
           Hey, I&apos;m Sami. Welcome to my personal portfolio where I showcase
           my work.
         </p>
-        <p>I&apos;m just a software developer who loves his job.</p>
+        <p>I&apos;m just a frontend developer who loves his job.</p>
         <div className="mt-8 sm:flex-row flex-col flex gap-8 items-center">
             <Image
               src={Myself}
