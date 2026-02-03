@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Myself from "@/assets/images/myself.webp";
+import Myself from "@/assets/images/myself.jpg";
 import ImagesWithLinkList from "@/components/ImagesWithLinkList";
 import ProjectCardList from "../components/ProjectCardList";
 import { TechStackCarousel } from "@/components/TechStackSlider";

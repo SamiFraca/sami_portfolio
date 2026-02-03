@@ -16,7 +16,7 @@ export default function AboutPage() {
       </p>
       <p>
         After that, i started working at Flat101 at 19 years old, (where i am
-        still). Now im 21 and i have been working on web development since then.
+        still).
       </p>
       <p>
         I focus on ecommerce development, involving databases,backend and
