@@ -2,7 +2,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-
+import Logo from '@/app/logo.svg'
+import Image from 'next/image';
 type NavItemProps = {
   href: string;
   text: string;
@@ -28,17 +29,17 @@ const NavItem = ({ href, text }: NavItemProps) => {
   );
 };
 
-const sidebarItems = [
+const HeaderItems = [
   { href: "/", text: "Home" },
   { href: "/about", text: "About" },
   { href: "/blog", text: "Blog" },
   { href: "mailto:fracasami@gmail.com", text: "Contact" },
 ];
 
-export const NavItemList = () => {
+export const HeaderItemList = () => {
   return (
-    <ul className="flex md:flex-col flex-row justify-center gap-4">
-      {sidebarItems.map((item, index) => (
+    <ul className="flex flex-row justify-center items-center gap-4 w-full ">
+      {HeaderItems.map((item, index) => (
         <li key={index}>
           <NavItem {...item} />
         </li>
@@ -47,10 +48,11 @@ export const NavItemList = () => {
   );
 };
 
-export const Sidebar = () => {
+export const Header = () => {
   return (
-    <nav className="sticky top-0 md:top-5 bg-[#282c35] py-4 h-fit z-30">
-      <NavItemList />
+    <nav className="sticky top-0 md:top-5 bg-[#282c35] py-4 h-fit z-30 flex flex-row  items-center px-4">
+      <Image src={Logo} alt="Logo" width={100} height={35} className='shrink-0' />
+      <HeaderItemList />
     </nav>
   );
 };
