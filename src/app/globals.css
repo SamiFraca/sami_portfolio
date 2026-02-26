@@ -1,64 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@font-face {
-  font-family: "Figtree";
-  src: url("../assets/fonts/Figtree-VariableFont_wght.woff2") format("woff");
-}
-@font-face {
-  font-family: "Red Hat";
-  src: url("../assets/fonts/RedHatText-VariableFont_wght.woff2") format("woff");
-}
-:root {
-  --text-color: #fff;
+@theme {
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
 }
 
-body {
-  color: var(--text-color);
-  background: #282c35;
-  font-family: "Figtree", "Red Hat", sans-serif;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Figtree", sans-serif;
-  font-weight: 700;
-}
-
-
-p {
-  font-family: "Red Hat", sans-serif;
-  font-size: 16px;
-}
-
-.is-active{
-  @apply bg-gray-500 rounded bg-opacity-40 p-1 hover:bg-gray-600 transition-all
-}
-
-.hover-anim {
-  @apply hover:bg-gray-500 transition-all hover:rounded hover:bg-opacity-40 hover:scale-110 p-1
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
 }
 
-.scroller ul:hover {
-  animation-play-state: paused;
+@utility text-balance {
+  text-wrap: balance;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree-VariableFont_wght.woff2') format('woff');
+  }
+  @font-face {
+    font-family: 'Red Hat';
+    src: url('../assets/fonts/RedHatText-VariableFont_wght.woff2')
+      format('woff');
+  }
+  :root {
+    --text-color: #fff;
+  }
+
+  body {
+    color: var(--text-color);
+    background: #282c35;
+    font-family: 'Figtree', 'Red Hat', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+    font-family: 'Red Hat', sans-serif;
+    font-size: 16px;
+  }
+
+  .is-active {
+    @apply bg-gray-500/40 rounded-sm p-1 hover:bg-gray-600 transition-all;
+  }
+
+  .hover-anim {
+    @apply hover:bg-gray-500/40 transition-all hover:rounded-sm hover:scale-110 p-1;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .scroller ul:hover {
+    animation-play-state: paused;
   }
 }
