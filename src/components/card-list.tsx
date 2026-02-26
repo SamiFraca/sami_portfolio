@@ -1,10 +1,10 @@
-import { Posts } from "@/data/Posts";
-import { Projects } from "@/data/Projects";
+import { Posts } from "@/data/posts-data";
+import { Projects } from "@/data/projects-data";
 import { Card } from "@/components/card";
 
 export const BlogPostList = () => {
   return (
-    <ul className="flex flex-col gap-8">
+    <ul className="flex flex-col gap-4 my-4">
       {Posts.map((post, index) => (
         <li key={index} className="hover:scale-105 transition-transform">
           <Card {...post} />
