@@ -2,7 +2,7 @@ import Image from "next/image";
 import Myself from "@/assets/images/myself.jpg";
 import { ImagesWithLinkList } from "@/components/image-link";
 import { ProjectCardList } from "@/components/card-list";
-import { TechStackCarousel } from "@/components/TechStackSlider";
+import { TechStackCarousel } from "@/components/tech-stack-carousel";
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
-import { BlogPostItemProps } from "@/components/BlogPostItem";
+import { CardProps } from "@/components/card";
 
-export const Posts: BlogPostItemProps[] = [
+export const Posts: CardProps[] = [
   {
     href: "https://samiblog.netlify.app/posts/997-2024-09-12/",
     title: "8 Frontend Tools to Become a Better Developer",

@@ -1,6 +1,6 @@
-import { ProjectCardProps } from "@/components/ProjectCard";
+import { CardProps } from "@/components/card";
 
-export const Projects: ProjectCardProps[] = [
+export const Projects: CardProps[] = [
   {
     href: "https://github.com/SamiFraca/DCP",
     title: "DCP",
