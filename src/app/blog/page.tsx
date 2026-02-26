@@ -1,10 +1,10 @@
-import { BlogPostItemList } from "@/components/BlogPostList";
+import { BlogPostList } from "@/components/card-list";
 
 export default function BlogPage() {
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-4xl">Blog</h1>
-      <BlogPostItemList />
+      <BlogPostList />
     </div>
   );
 }

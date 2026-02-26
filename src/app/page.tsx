@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Myself from "@/assets/images/myself.jpg";
-import ImagesWithLinkList from "@/components/ImagesWithLinkList";
-import ProjectCardList from "../components/ProjectCardList";
+import { ImagesWithLinkList } from "@/components/image-link";
+import { ProjectCardList } from "@/components/card-list";
 import { TechStackCarousel } from "@/components/TechStackSlider";
 
 export default function Home() {
