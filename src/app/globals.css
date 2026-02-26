@@ -38,11 +38,11 @@ p {
 }
 
 .is-active{
-  @apply bg-slate-500 rounded bg-opacity-40 p-1 hover:bg-slate-600 transition-all
+  @apply bg-gray-500 rounded bg-opacity-40 p-1 hover:bg-gray-600 transition-all
 }
 
 .hover-anim {
-  @apply hover:bg-slate-500 transition-all hover:rounded hover:bg-opacity-40 hover:scale-110 p-1
+  @apply hover:bg-gray-500 transition-all hover:rounded hover:bg-opacity-40 hover:scale-110 p-1
 }
 @keyframes scroll {
   0% {

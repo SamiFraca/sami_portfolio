@@ -1,5 +1,3 @@
-import { Project } from "next/dist/build/swc";
-
 export type ProjectCardProps = {
   title: string;
   href: string;
