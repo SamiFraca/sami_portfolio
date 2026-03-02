@@ -28,7 +28,7 @@ export default function Home() {
             <TechStackCarousel />
              <Character3D 
               modelPath="/models/avatar.glb" 
-              className="w-[300px] h-[400px] bg-linear-to-b from-[#1a1d29] to-[#0f1117] rounded-lg" 
+              className="w-[300px] h-[400px] " 
             />
         </div>
         <p className="mt-4">
