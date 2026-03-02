@@ -20,9 +20,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="16x16" />
       </head>
       <body
-        className={`${inter.className} max-w-screen-md flex mx-auto md:mt-16 mt-8 justify-center items-center `}
+        className={`${inter.className}  flex mx-auto   justify-center items-center `}
       >
-        <main className="flex md:gap-16 gap-4 flex-col mx-4 md:mx-0 w-[768px]"><Header/> {children}</main>
+        <main className="flex md:gap-16 gap-4 flex-col mx-4 md:mx-0 "><Header/> {children}</main>
       </body>
     </html>
   );

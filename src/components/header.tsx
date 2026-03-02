@@ -50,7 +50,7 @@ export const HeaderItemList = () => {
 
 export const Header = () => {
   return (
-    <nav className="sticky top-0 md:top-5 bg-[#282c35] py-4 h-fit z-30 flex flex-row  items-center px-4">
+    <nav className="sticky top-0 bg-[#282c35] py-4 h-fit z-30 flex flex-row  items-center px-4">
       <Image src={Logo} alt="Logo" width={100} height={35} className='shrink-0' />
       <HeaderItemList />
     </nav>
