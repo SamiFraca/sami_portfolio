@@ -96,7 +96,7 @@ export default function Character3D({ modelPath, className = '' }: Character3DPr
         </Suspense>
       </Canvas>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/60 text-sm pointer-events-none">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/60 text-sm pointer-events-none">
         Drag to rotate
       </div>
     </div>
