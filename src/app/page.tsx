@@ -3,6 +3,7 @@ import Myself from "@/assets/images/myself.jpg";
 import { ImagesWithLinkList } from "@/components/image-link";
 import { ProjectCardList } from "@/components/card-list";
 import { TechStackCarousel } from "@/components/tech-stack-carousel";
+import Character3D from "@/components/character-3d";
 
 export default function Home() {
   return (
@@ -25,6 +26,10 @@ export default function Home() {
             />
             <ImagesWithLinkList />
             <TechStackCarousel />
+             <Character3D 
+              modelPath="/models/avatar.glb" 
+              className="w-[300px] h-[400px] bg-linear-to-b from-[#1a1d29] to-[#0f1117] rounded-lg" 
+            />
         </div>
         <p className="mt-4">
           These are some of the last projects I&apos;ve worked on in my free
