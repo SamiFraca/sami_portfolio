@@ -7,6 +7,8 @@ import Character3D from "@/components/character-3d";
 import { TypewriterText } from "@/components/typewriter-text";
 import { AnimatedWaves } from "@/components/animated-waves";
 import { SpotlightSection } from "@/components/spotlight-section";
+import { GlassBentoGrid } from "@/components/glass-bento-grid";
+import { bentoItems } from "@/components/glass-card-bento";
 
 export default function Home() {
   return (
@@ -46,14 +48,17 @@ export default function Home() {
                 className="w-[300px] h-[400px] "  
               /> 
           </div> */}
-          <SpotlightSection direction="left">
+          <SpotlightSection direction="right">
             <TechStackCarousel />
-
+            <div className="flex flex-col gap-4 pt-20">
+            <h2 className="lg:text-6xl text-4xl font-bold mb-4 text-center w-full">A little bit About Me</h2>
+            <GlassBentoGrid items={bentoItems} cols={{ sm: 1, md: 2, lg: 3 }} />
             <p className="mt-4">
               These are some of the last projects I&apos;ve worked on in my free
               time.
             </p>
             <ProjectCardList />
+            </div>
           </SpotlightSection>
         </div>
       </div>
