@@ -1,18 +1,19 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Logo from '@/app/logo.svg'
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 
 type NavItemProps = {
   href: string;
   text: string;
   index: number;
+  enableAnimation: boolean;
 };
 
-const NavItem = ({ href, text, index }: NavItemProps) => {
+const NavItem = ({ href, text, index, enableAnimation }: NavItemProps) => {
   const pathname = usePathname();
   const isActive = pathname === href;
 
@@ -27,12 +28,28 @@ const NavItem = ({ href, text, index }: NavItemProps) => {
         className={`
           relative px-6 py-2 text-sm font-medium transition-all duration-300 rounded-lg
           ${isActive 
-            ? 'text-white bg-white/20 backdrop-blur-sm border border-white/20' 
-            : 'text-white/80 hover:text-white hover:bg-white/10'
+            ? 'text-white' 
+            : 'hover:text-white'
           }
         `}
       >
-        {text}
+        <span className="relative z-10">{text}</span>
+        {isActive && enableAnimation && (
+          <motion.div
+            layoutId="activeTab"
+            initial={false}
+            className="absolute inset-0 bg-white/20  rounded-full border  border-white/20"
+            transition={{ 
+              type: "spring", 
+              stiffness: 500, 
+              damping: 30,
+              mass: 0.8
+            }}
+          />
+        )}
+        {isActive && !enableAnimation && (
+          <div className="absolute inset-0 bg-white/20  rounded-full border border-white/20" />
+        )}
       </Link>
     </motion.div>
   );
@@ -46,6 +63,25 @@ const HeaderItems = [
 ];
 
 export const HeaderItemList = () => {
+  const pathname = usePathname();
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  const [enableAnimation, setEnableAnimation] = useState(false);
+
+  useEffect(() => {
+    if (pathname !== prevPathname) {
+      setEnableAnimation(false);
+      setPrevPathname(pathname);
+      
+      const timer = setTimeout(() => {
+        setEnableAnimation(true);
+      }, 100);
+      
+      return () => clearTimeout(timer);
+    } else {
+      setEnableAnimation(true);
+    }
+  }, [pathname, prevPathname]);
+
   return (
     <motion.ul 
       className="flex flex-row items-center gap-2"
@@ -54,8 +90,8 @@ export const HeaderItemList = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       {HeaderItems.map((item, index) => (
-        <li key={index}>
-          <NavItem {...item} index={index} />
+        <li key={item.href}>
+          <NavItem {...item} index={index} enableAnimation={enableAnimation} />
         </li>
       ))}
     </motion.ul>
@@ -65,7 +101,6 @@ export const HeaderItemList = () => {
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Add scroll effect
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', () => {
       setIsScrolled(window.scrollY > 20);
@@ -82,7 +117,6 @@ export const Header = () => {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
-      {/* Glassmorphism background */}
       <div 
         className={`
           absolute inset-0 backdrop-blur-xl bg-white/5
@@ -96,7 +130,6 @@ export const Header = () => {
       />
       
       <nav className="relative flex items-center justify-between px-8">
-        {/* Logo */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400, damping: 30 }}
@@ -110,12 +143,11 @@ export const Header = () => {
           />
         </motion.div>
 
-        {/* Navigation */}
-        <HeaderItemList />
-
+        <LayoutGroup>
+          <HeaderItemList />
+        </LayoutGroup>
       </nav>
 
-      {/* Subtle light effect on hover */}
       <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-700 pointer-events-none">
         <div 
           className="absolute inset-0"

@@ -42,10 +42,12 @@ export default function Home() {
               <TechStackCarousel />
                {/* <Character3D 
                 modelPath="/models/avatar.glb" 
-                className="w-[300px] h-[400px] " 
+                className="w-[300px] h-[400px] "  
               /> 
           </div> */}
           <div className="max-w-7xl mx-auto">
+            <TechStackCarousel/>
+            
           <p className="mt-4">
             These are some of the last projects I&apos;ve worked on in my free
             time.
