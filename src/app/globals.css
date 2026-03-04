@@ -46,8 +46,8 @@
 
   body {
     color: var(--text-color);
-    background: #282c35;
     font-family: 'Figtree', 'Red Hat', sans-serif;
+    background-color: black;
   }
 
   h1,

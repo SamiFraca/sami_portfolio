@@ -22,7 +22,10 @@ export default function RootLayout({
       <body
         className={`${inter.className}  flex mx-auto   justify-center items-center `}
       >
-        <main className="flex   flex-col mx-4 md:mx-0  w-full"><Header/> {children}</main>
+        <main className="flex flex-col w-full">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );
