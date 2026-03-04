@@ -14,15 +14,17 @@ export default function Home() {
         <div className="relative z-10 text-3xl text-white">
           <div className="w-full h-screen relative">
             <AnimatedWaves />
-            <div className="p-6">
-              <h1 className="text-5xl">
-                <TypewriterText text="Sami Fraca" speed={200} />
-              </h1>
-              <p>
-                Hey, I&apos;m Sami. Welcome to my personal portfolio where I showcase
-                my work.
-              </p>
-              <p>I&apos;m just a frontend developer who loves his job.</p>
+            <div className="p-6 flex flex-row justify-between items-center">
+              <div className="flex flex-col gap-3">
+                <h1 className="text-5xl">
+                  <TypewriterText text="Sami Fraca" speed={200} />
+                </h1>
+                <p>
+                  Hey, I&apos;m Sami. Welcome to my personal portfolio where I showcase
+                  my work.
+                </p>
+                <p>I&apos;m just a frontend developer who loves his job.</p>
+              </div>
             </div>
           </div>
 
