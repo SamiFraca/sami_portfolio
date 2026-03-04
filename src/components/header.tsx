@@ -4,8 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Logo from '@/app/logo.svg'
 import Image from 'next/image';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 type NavItemProps = {
   href: string;
