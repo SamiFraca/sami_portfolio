@@ -6,6 +6,7 @@ import { TechStackCarousel } from "@/components/tech-stack-carousel";
 import Character3D from "@/components/character-3d";
 import { TypewriterText } from "@/components/typewriter-text";
 import { AnimatedWaves } from "@/components/animated-waves";
+import { SpotlightSection } from "@/components/spotlight-section";
 
 export default function Home() {
   return (
@@ -45,15 +46,15 @@ export default function Home() {
                 className="w-[300px] h-[400px] "  
               /> 
           </div> */}
-          <div className="max-w-7xl mx-auto">
-            <TechStackCarousel/>
-            
-          <p className="mt-4">
-            These are some of the last projects I&apos;ve worked on in my free
-            time.
-          </p>
-          <ProjectCardList />
-          </div>
+          <SpotlightSection direction="left">
+            <TechStackCarousel />
+
+            <p className="mt-4">
+              These are some of the last projects I&apos;ve worked on in my free
+              time.
+            </p>
+            <ProjectCardList />
+          </SpotlightSection>
         </div>
       </div>
     </>
