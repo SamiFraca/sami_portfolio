@@ -12,6 +12,7 @@ export interface BentoCardProps {
   rowSpan?: 1 | 2 | 3 | 4;
   minHeight?: string;
   className?: string;
+  occupiesHalfContent?: boolean;
 }
 
 export const bentoItems: BentoCardProps[] = [
@@ -26,7 +27,9 @@ export const bentoItems: BentoCardProps[] = [
   {
     id: "2",
     title: "My expertise",
-    description: "Software, AI, ML & Data", 
+    description: "Software, AI, ML & Data",
+    image: "/images/code3-final.svg",
+    occupiesHalfContent: true,
     colSpan: 1,
     rowSpan: 2,
   },
@@ -71,6 +74,7 @@ export const GlassBentoCard = ({
   rowSpan = 1,
   minHeight = "auto",
   className = "",
+  occupiesHalfContent = false,
 }: BentoCardProps) => {
   const colSpanClass = {
     1: "md:col-span-1 lg:col-span-1",
@@ -92,12 +96,12 @@ export const GlassBentoCard = ({
       style={{ minHeight }}
     >
       {image && (
-        <div className="absolute inset-0 w-full h-full">
+        <div className={occupiesHalfContent ? "absolute bottom-0 w-full h-1/2" : "absolute inset-0 w-full h-full"}>
           <Image
             src={image}
             alt={imageAlt}
             fill
-            className="object-cover object-center"
+            className={`object-cover ${occupiesHalfContent ? "object-top" : "object-center"}`}
           />
         </div>
       )}
