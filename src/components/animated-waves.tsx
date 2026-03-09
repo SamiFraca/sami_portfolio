@@ -86,10 +86,11 @@ export const AnimatedWaves = () => {
         top: 0,
         left: 0,
         width: '100vw',
-        height: '70vh',
+        height: '60vh',
         zIndex: -1, 
         pointerEvents: 'none', 
-        backgroundColor: '#000'
+        backgroundColor: '#000',
+        paddingBottom: '50px'
       }}
     />
   );

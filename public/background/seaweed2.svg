@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 654" width="1440" height="654" preserveAspectRatio="true" style="background:#000;">
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff00ff" />
+      <stop offset="1" stop-color="#00ffff" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(-50, 50) rotate(-2)" opacity="0.9">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.5" 
+          d="M 0,654 C 400,600 600,100 800,400 C 1000,700 1200,200 1500,-100" />
+  </g>
+
+  <g transform="translate(-30, 30) rotate(-1)" opacity="0.8">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.5" 
+          d="M 0,680 C 420,620 620,120 820,420 C 1020,720 1220,220 1520,-80" />
+  </g>
+
+  <g transform="translate(-10, 10) rotate(0.5)" opacity="0.7">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.8" 
+          d="M -100,700 C 350,550 550,50 750,350 C 950,650 1150,150 1450,-150" />
+  </g>
+
+  <g transform="translate(20, -20) rotate(1)" opacity="0.6">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.4" 
+          d="M -50,600 C 450,580 650,-50 850,250 C 1050,550 1250,50 1550,-200" />
+  </g>
+
+  <g transform="translate(50, -50) rotate(2)" opacity="0.5">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.6" 
+          d="M -200,800 C 300,400 900,400 1100,200 S 1300,-200 1600,-300" />
+  </g>
+
+  <g transform="translate(0, 0)" opacity="0.4">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.3" 
+          d="M 100,754 C 500,650 700,200 900,500 S 1300,0 1500,-50" />
+  </g>
+
+  <g transform="translate(-40, -10) rotate(-1.5)" opacity="0.65">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.4" 
+          d="M -150,680 C 250,480 450,80 650,380 C 850,680 1050,180 1350,-120" />
+  </g>
+
+  <g transform="translate(30, 40) rotate(1.5)" opacity="0.75">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.5" 
+          d="M 50,720 C 450,620 650,120 850,420 C 1050,720 1250,220 1550,-80" />
+  </g>
+
+  <g transform="translate(-60, 20) rotate(-0.5)" opacity="0.45">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.3" 
+          d="M -50,650 C 350,500 550,0 750,300 C 950,600 1150,100 1450,-200" />
+  </g>
+
+  <g transform="translate(60, -30) rotate(2.5)" opacity="0.35">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.7" 
+          d="M 150,780 C 550,680 750,230 950,530 S 1350,30 1550,-20" />
+  </g>
+
+  <g transform="translate(10, 60) rotate(-2.5)" opacity="0.85">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.6" 
+          d="M -80,630 C 320,530 520,30 720,330 C 920,630 1120,130 1420,-170" />
+  </g>
+
+  <g transform="translate(-20, -40) rotate(0.8)" opacity="0.55">
+    <path stroke="url(#lg)" fill="none" stroke-width="0.4" 
+          d="M -120,740 C 380,590 580,90 780,390 S 1180,90 1480,-110" />
+  </g>
+</svg>

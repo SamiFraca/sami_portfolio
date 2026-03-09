@@ -26,12 +26,33 @@ export const bentoItems: BentoCardProps[] = [
   {
     id: "2",
     title: "My expertise",
-    description: "Software, AI, ML & Data",
+    description: "Software, AI, ML & Data", 
     colSpan: 1,
     rowSpan: 2,
   },
   {
     id: "3",
+    title: "My expertise",
+    description: "Software, AI, ML & Data",
+    colSpan: 1,
+    rowSpan: 2,
+  },
+  {
+    id: "4",
+    title: "My expertise",
+    description: "Software, AI, ML & Data",
+    colSpan: 1,
+    rowSpan: 2,
+  },
+  {
+    id: "5",
+    title: "My expertise",
+    description: "Software, AI, ML & Data",
+    colSpan: 1,
+    rowSpan: 2,
+  },
+  {
+    id: "6",
     title: "My expertise",
     description: "Software, AI, ML & Data",
     colSpan: 1,
@@ -67,7 +88,7 @@ export const GlassBentoCard = ({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl group/bento hover:shadow-xl transition duration-200 flex flex-col justify-between ${colSpanClass} ${rowSpanClass} ${className}`}
+      className={`relative overflow-hidden rounded-3xl border border-white/10 bg-transparent   group/bento hover:shadow-xl transition duration-200 flex flex-col justify-between ${colSpanClass} ${rowSpanClass} ${className} h-full`}
       style={{ minHeight }}
     >
       {image && (

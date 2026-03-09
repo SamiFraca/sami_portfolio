@@ -13,12 +13,12 @@ import { bentoItems } from "@/components/glass-card-bento";
 export default function Home() {
   return (
     <>
-      <div className="relative min-h-screen bg-black w-full ">
+      <div className="relative min-h-screen w-full" >
         <div className="relative z-10 text-3xl text-white">
           <div className="w-full h-[60vh] relative">
             <AnimatedWaves />
-            <div className="p-6 flex flex-row justify-center items-center max-w-7xl mx-auto h-full  ">
-              <div className="flex flex-col h-full my-auto items-center justify-center gap-12 ">
+            <div className="p-6 flex flex-row justify-center items-center max-w-7xl mx-auto h-full   ">
+              <div className="flex flex-col h-full my-auto items-center justify-center gap-12  ">
                 <h1 className="lg:text-7xl text-5xl text-center ">
                   <TypewriterText text="Sami Fraca" speed={200} />
                 </h1>
@@ -48,7 +48,7 @@ export default function Home() {
                 className="w-[300px] h-[400px] "  
               /> 
           </div> */}
-          <SpotlightSection direction="right">
+          <SpotlightSection direction="left"  >
             <TechStackCarousel />
             <div className="flex flex-col gap-4 pt-20">
             <h2 className="lg:text-6xl text-4xl font-bold mb-4 text-center w-full">A little bit About Me</h2>
@@ -57,9 +57,9 @@ export default function Home() {
               These are some of the last projects I&apos;ve worked on in my free
               time.
             </p>
-            <ProjectCardList />
             </div>
           </SpotlightSection>
+          {/* <ProjectCardList /> */}
         </div>
       </div>
     </>

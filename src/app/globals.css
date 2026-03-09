@@ -6,6 +6,14 @@
     from 180deg at 50% 50%,
     var(--tw-gradient-stops)
   );
+  --color-electric-blue: rgb(30 50 80);
+  --color-black-100: rgb(0 3 25);
+  --color-gradient-black-to-electric-blue: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(30, 50, 80, 1) 20%,
+    rgba(30, 50, 80, 1) 100%
+  );
 }
 
 /*
@@ -72,6 +80,11 @@
   .hover-anim {
     @apply hover:bg-gray-500/40 transition-all hover:rounded-sm hover:scale-110 p-1;
   }
+
+  .gradient-black-to-electric-blue {
+    background: var(--color-gradient-black-to-electric-blue);
+  }
+
   @keyframes scroll {
     0% {
       transform: translateX(0);
