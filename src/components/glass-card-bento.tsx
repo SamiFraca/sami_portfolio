@@ -72,7 +72,7 @@ export const GlassBentoCard = ({
   content,
   colSpan = 1,
   rowSpan = 1,
-  minHeight = "auto",
+  minHeight,
   className = "",
   occupiesHalfContent = false,
 }: BentoCardProps) => {
@@ -92,16 +92,16 @@ export const GlassBentoCard = ({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-3xl border border-white/10 bg-transparent   group/bento hover:shadow-xl transition duration-200 flex flex-col justify-between ${colSpanClass} ${rowSpanClass} ${className} h-full`}
+      className={`relative overflow-hidden rounded-3xl border border-white/10 bg-transparent   group/bento hover:shadow-xl transition duration-200 flex flex-col justify-between ${colSpanClass} ${rowSpanClass} ${className} h-full `}
       style={{ minHeight }}
     >
       {image && (
-        <div className={occupiesHalfContent ? "absolute bottom-0 w-full h-1/2" : "absolute inset-0 w-full h-full"}>
+        <div className={occupiesHalfContent ? "absolute bottom-0 w-full  h-2/3 lg:h-1/2" : "absolute inset-0 w-full h-full "}>
           <Image
             src={image}
             alt={imageAlt}
             fill
-            className={`object-cover ${occupiesHalfContent ? "object-top" : "object-center"}`}
+            className={`object-cover ${occupiesHalfContent ? "object-top" : "object-top lg:object-center"}`}
           />
         </div>
       )}
@@ -112,7 +112,7 @@ export const GlassBentoCard = ({
         animation: "liquid-flow 3s ease-in-out infinite"
       }} />
 
-      <div className="relative z-10 flex flex-col justify-start h-full p-5 lg:p-10 space-y-4">
+      <div className="relative z-10 flex flex-col justify-start h-full p-5 lg:p-10 space-y-4 min-h-50  lg:min-h-auto" style={{minHeight}}>
         {title && (
           <h3 className="font-bold text-lg lg:text-3xl max-w-96 text-white group-hover/bento:translate-x-2 transition duration-200">
             {title}
