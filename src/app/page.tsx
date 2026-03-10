@@ -20,7 +20,7 @@ export default function Home() {
             <div className="p-6 flex flex-row justify-center items-center max-w-7xl mx-auto h-full   ">
               <div className="flex flex-col h-full my-auto items-center justify-center gap-12  ">
                 <h1 className="lg:text-7xl text-5xl text-center ">
-                  <TypewriterText text="Sami Fraca" speed={200} />
+                  <TypewriterText text="Sami Fraca" speed={200} className="heading" />
                 </h1>
                 <div className="flex flex-col gap-2 ">
                 <p>
@@ -51,8 +51,8 @@ export default function Home() {
           <SpotlightSection direction="left"  >
             <TechStackCarousel />
             <div className="flex flex-col gap-4 pt-20">
-            <h2 className="lg:text-6xl text-4xl font-bold mb-4 text-center w-full">A little bit About Me</h2>
-            <GlassBentoGrid items={bentoItems} cols={{ sm: 1, md: 2, lg: 2 }} />
+            <h2 className="lg:text-6xl text-4xl font-bold mb-4 text-center w-full heading">A little bit About Me</h2>
+            <GlassBentoGrid items={bentoItems} />
             <p className="mt-4">
               These are some of the last projects I&apos;ve worked on in my free
               time.

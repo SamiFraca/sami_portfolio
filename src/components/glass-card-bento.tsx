@@ -13,6 +13,8 @@ export interface BentoCardProps {
   minHeight?: string;
   className?: string;
   occupiesHalfContent?: boolean;
+  imagePositioning?: string;
+  imageAnimation?: string;
 }
 
 export const bentoItems: BentoCardProps[] = [
@@ -37,6 +39,9 @@ export const bentoItems: BentoCardProps[] = [
     id: "3",
     title: "My expertise",
     description: "Software, AI, ML & Data",
+    image: "/images/blue-scrap.png",
+    imagePositioning: " left-[5rem] lg:left-[12rem] bottom-[-2rem]",
+    imageAnimation: "levitate-image",
     colSpan: 1,
     rowSpan: 2,
   },
@@ -75,6 +80,8 @@ export const GlassBentoCard = ({
   minHeight,
   className = "",
   occupiesHalfContent = false,
+  imagePositioning,
+  imageAnimation,
 }: BentoCardProps) => {
   const colSpanClass = {
     1: "md:col-span-1 lg:col-span-1",
@@ -96,7 +103,7 @@ export const GlassBentoCard = ({
       style={{ minHeight }}
     >
       {image && (
-        <div className={occupiesHalfContent ? "absolute bottom-0 w-full  h-2/3 lg:h-1/2" : "absolute inset-0 w-full h-full "}>
+        <div className={`absolute bottom-0 transition-all duration-500 ${imageAnimation} ${imagePositioning} ${occupiesHalfContent ? "w-full h-2/3 top-1/2 group-hover/bento:top-1/3" : "w-full h-full"}`}>
           <Image
             src={image}
             alt={imageAlt}

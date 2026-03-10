@@ -85,6 +85,49 @@
     background: var(--color-gradient-black-to-electric-blue);
   }
 
+  .row-span-1-5 {
+    grid-row: span 1.5;
+  }
+
+  .heading {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-white;
+  }
+
+  .subheading {
+    @apply text-lg md:text-xl lg:text-2xl font-semibold text-white/90;
+  }
+
+  @keyframes levitate {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes slide-top {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-16px);
+    }
+  }
+
+  .group\/bento:hover .levitate-image {
+    animation: levitate 2s ease-in-out infinite;
+    left: 35%;
+  }
+
+  .group\/bento:hover .slide-top {
+    animation: slide-top 0.6s ease-in-out forwards !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+  }
+
+
   @keyframes scroll {
     0% {
       transform: translateX(0);

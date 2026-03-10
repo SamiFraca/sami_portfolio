@@ -20,7 +20,7 @@ export const SpotlightSection = ({
         <img
           src={'/background/seaweed2.svg'}
           alt="seaweed background"
-          className={`absolute inset-0 w-full h-full object-cover opacity-60 ${
+          className={`absolute inset-0 w-full h-full   object-cover opacity-60 ${
             isRight ? "scale-x-[-1]" : ""
           }`}
           style={isRight ? { transform: "scaleX(-1) translateY(-100%)" } : undefined}
