@@ -151,6 +151,28 @@
   }
 
 
+  @keyframes content-reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .content-reveal {
+    opacity: 0;
+    visibility: hidden;
+  } 
+
+  .content-reveal.active {
+    animation: content-reveal 0.8s ease-out forwards;
+    visibility: visible;
+  }
+
   @keyframes scroll {
     0% {
       transform: translateX(0);

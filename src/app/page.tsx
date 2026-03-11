@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Myself from "@/assets/images/myself.jpg";
-import { ImagesWithLinkList } from "@/components/image-link";
-import { ProjectCardList } from "@/components/card-list";
+import { GlassBentoGrid } from "@/components/glass-bento-grid";
+import { bentoItems } from "@/components/glass-card-bento";
+import { SpotlightSection } from "@/components/spotlight-section";
 import { TechStackCarousel } from "@/components/tech-stack-carousel";
 import Character3D from "@/components/character-3d";
 import { TypewriterText } from "@/components/typewriter-text";
 import { AnimatedWaves } from "@/components/animated-waves";
-import { SpotlightSection } from "@/components/spotlight-section";
-import { GlassBentoGrid } from "@/components/glass-bento-grid";
-import { bentoItems } from "@/components/glass-card-bento";
+import { ViewportAnimation } from "@/components/viewport-animation";
 
 export default function Home() {
+
   return (
     <>
       <div className="relative min-h-screen w-full" >
@@ -51,7 +51,7 @@ export default function Home() {
           <SpotlightSection direction="left"  >
             <TechStackCarousel />
             <div className="flex flex-col gap-4 pt-32">
-            <h2 className="lg:text-6xl text-4xl font-bold  text-center w-full heading mb-14">A little bit <span className="text-primary-lighter">About Me</span></h2>
+            <ViewportAnimation animationClass="content-reveal"><h2 className="lg:text-6xl text-4xl font-bold  text-center w-full heading mb-14"> A little bit<span className="text-primary-lighter"> About Me</span></h2></ViewportAnimation>
             <GlassBentoGrid items={bentoItems} />
             <p className="mt-4">  
               These are some of the last projects I&apos;ve worked on in my free

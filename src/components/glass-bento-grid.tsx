@@ -1,4 +1,5 @@
 import { GlassBentoCard, type BentoCardProps } from "./glass-card-bento";
+import { ViewportAnimation } from "./viewport-animation";
 
 interface GlassBentoGridProps {
   items: BentoCardProps[];
@@ -21,13 +22,14 @@ export const GlassBentoGrid = ({ items }: GlassBentoGridProps) => {
         const { colSpan, rowSpan, minHeight } = layout;
 
         return (
-          <div
+          <ViewportAnimation
             key={item.id}
-            className={`row-span-1 relative overflow-hidden rounded-3xl border border-white/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-10 lg:space-y-4 ${colSpan} ${rowSpan} ${minHeight}`}
+            className={`row-span-1 relative overflow-hidden rounded-3xl border border-white/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-10 lg:space-y-4 dasdads ${colSpan} ${rowSpan} ${minHeight}`}
             style={{ background: "transparent" }}
+            animationClass="content-reveal"
           >
             <GlassBentoCard {...item} />
-          </div>
+          </ViewportAnimation>
         );
       })}
     </div>
