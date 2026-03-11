@@ -6,7 +6,7 @@ interface GlassBentoGridProps {
 }
 
 const GRID_LAYOUT = {
-  0: { colSpan: "lg:col-span-3 md:col-span-6", rowSpan: "lg:row-span-4 md:row-span-1-5", minHeight: "lg:h-full" },
+  0: { colSpan: "lg:col-span-3 md:col-span-6", rowSpan: "lg:row-span-4 md:row-span-1-5", minHeight: "" },
   1: { colSpan: "lg:col-span-2 md:col-span-3", rowSpan: "md:row-span-1 lg:row-span-2", minHeight: "" },
   2: { colSpan: "lg:col-span-2 md:col-span-3", rowSpan: "md:row-span-1 lg:row-span-2", minHeight: "" },
   3: { colSpan: "lg:col-span-2 md:col-span-3", rowSpan: "md:row-span-1 lg:row-span-2", minHeight: "" },

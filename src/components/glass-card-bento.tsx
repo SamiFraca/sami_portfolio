@@ -23,8 +23,8 @@ export const bentoItems: BentoCardProps[] = [
     title: "I build softwares that drive revenue",
     image: "/images/ai.png",
     colSpan: 2,
-    rowSpan: 4,
-    minHeight: "60vh",
+    rowSpan: 2,
+    className:'!object-top'
   },
   {
     id: "2",
@@ -99,7 +99,7 @@ export const GlassBentoCard = ({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-3xl border border-white/10 bg-transparent   group/bento hover:shadow-xl transition duration-200 flex flex-col justify-between ${colSpanClass} ${rowSpanClass} ${className} h-full `}
+      className={`relative overflow-hidden rounded-3xl border border-white/10 bg-transparent   group/bento hover:shadow-xl transition duration-200 flex flex-col justify-between ${colSpanClass} ${rowSpanClass}  h-full `}
       style={{ minHeight }}
     >
       {image && (
@@ -108,7 +108,7 @@ export const GlassBentoCard = ({
             src={image}
             alt={imageAlt}
             fill
-            className={`object-cover ${occupiesHalfContent ? "object-top" : "object-top lg:object-center"}`}
+            className={`object-cover ${className} ${occupiesHalfContent ? "object-top" : "object-top lg:object-center"}`}
           />
         </div>
       )}
