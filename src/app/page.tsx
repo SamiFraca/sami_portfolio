@@ -50,10 +50,10 @@ export default function Home() {
           </div> */}
           <SpotlightSection direction="left"  >
             <TechStackCarousel />
-            <div className="flex flex-col gap-4 pt-20">
-            <h2 className="lg:text-6xl text-4xl font-bold mb-4 text-center w-full heading">A little bit About Me</h2>
+            <div className="flex flex-col gap-4 pt-32">
+            <h2 className="lg:text-6xl text-4xl font-bold  text-center w-full heading mb-14">A little bit <span className="text-primary-lighter">About Me</span></h2>
             <GlassBentoGrid items={bentoItems} />
-            <p className="mt-4">
+            <p className="mt-4">  
               These are some of the last projects I&apos;ve worked on in my free
               time.
             </p>

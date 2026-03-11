@@ -6,8 +6,31 @@
     from 180deg at 50% 50%,
     var(--tw-gradient-stops)
   );
-  --color-electric-blue: rgb(30 50 80);
+  
   --color-black-100: rgb(0 3 25);
+  
+  /* Design System - Primary Colors */
+  --color-primary: rgb(30 50 80);
+  --color-primary-light: rgb(59 89 129);
+  --color-primary-lighter: rgb(88 128 168);
+  --color-primary-dark: rgb(15 25 40);
+  
+  /* Design System - Accent Colors */
+  --color-accent-cyan: rgb(34 211 238);
+  --color-accent-purple: rgb(168 85 247);
+  --color-accent-pink: rgb(236 72 153);
+  
+  /* Design System - Neutral Colors */
+  --color-neutral-dark: rgb(15 23 42);
+  --color-neutral-medium: rgb(51 65 85);
+  --color-neutral-light: rgb(226 232 240);
+  --color-neutral-lighter: rgb(241 245 249);
+  
+  /* Design System - Semantic Colors */
+  --color-success: rgb(34 197 94);
+  --color-warning: rgb(251 146 60);
+  --color-error: rgb(239 68 68);
+  --color-info: rgb(59 130 246);
   --color-gradient-black-to-electric-blue: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 0%,
